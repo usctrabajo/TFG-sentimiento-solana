@@ -1,0 +1,11 @@
+[project]
+name = "tfg-sentimiento-solana"
+version = "0.1.0"
+description = "TFG: Predicción de la tendencia del precio de Solana combinando datos de mercado (OHLCV) y sentimiento de noticias (GDELT)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "yfinance>=1.2.0",
+]
