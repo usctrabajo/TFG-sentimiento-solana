@@ -44,7 +44,7 @@ def main():
     # Eliminamos las filas con valores nulos
     df=df.dropna(subset=["Open", "High", "Low", "Close", "Volume"]).reset_index(drop=True)
 
-    # Los del precio de cierre ( para calcular log retornos)
+    # Logs del precio de cierre ( para calcular log retornos)
     df["log_close"]=np.log(df["Close"])
 
     # Calcular log returnos diarios
